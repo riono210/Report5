@@ -8,7 +8,7 @@ public class Main {
         String str = "3．14";
 
         try {
-            System.out.println(str.length());
+            System.out.println("文字列の長さ:"+str.length());
             Double.parseDouble(str);
         }
         catch (NullPointerException e) {
