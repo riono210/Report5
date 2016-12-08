@@ -5,18 +5,20 @@ package jp.ac.uryukyu.ie.e165729;
  */
 public class Main {
     public static void main(String[] args){
-        String str = null;
+        String str = "3．14";
 
         try {
             System.out.println(str.length());
+            Double.parseDouble(str);
         }
-        catch (NullPointerException e){
-            System.out.println("エラー:" + e.toString()+"が発生しました。プログラムを終了します。");
+        catch (NullPointerException e) {
+            System.out.println("エラー:" + e.toString() + "が発生しました。プログラムを終了します。");
             e.printStackTrace();
-
         }
-
-
+        catch (NumberFormatException e){
+            System.out.println("エラー:" + e.toString() +"が発生しました。プログラムを終了します。" );
+            e.printStackTrace();
+        }
     }
 
 }
