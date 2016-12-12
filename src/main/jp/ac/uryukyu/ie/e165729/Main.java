@@ -9,7 +9,7 @@ public class Main {
 
         try {
             System.out.println("文字列の長さ:"+str.length());
-            Double.parseDouble(str);
+            double value =Double.parseDouble(str);
         }
         catch (NullPointerException e) {
             System.out.println("エラー:" + e.toString() + "が発生しました。プログラムを終了します。");
